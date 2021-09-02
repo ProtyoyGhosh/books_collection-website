@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- linkng boostrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <!-- linking css -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Search Books</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="m-3 text-center fw-bold fs-1"><span class="text-info">Welcome </span>to Book <span
+                class="text-info">Archive!!</span></h1>
+        <h1 class="m-3 text-center fw-bold fs-1">Search the <span class="text-info">Book</span> you need...</h1>
+    </header>
+
+    <main>
+        <section>
+            <!-- search section -->
+            <div class="input-group m-5 w-75 mx-auto">
+                <input id="input_field" type="text" class="form-control" placeholder="Type your books here....."
+                    aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn btn-outline-info text-dark bg-info" type="button" id="search_button">Search</button>
+            </div>
+
+            <!-- result found........ -->
+            <div id="result_found" class="result_style">
+            </div>
+
+            <!-- card section -->
+            <div id="display_item" class="row row-cols-1 row-cols-md-3 g-4">
+
+            </div>
+
+
+
+            <hr>
+
+            <!-- error part....... -->
+            <div id="error_div" class="result_style"></div>
+
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
